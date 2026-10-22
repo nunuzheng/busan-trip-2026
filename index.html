@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>釜山两天一夜 · dodo 旅行手册</title>
+<style>
+:root{--bg:#f5f3ef;--card:#fff;--fg:#1d1d1f;--mut:#6e6e73;--line:#e6e2db;--acc:#0a7aff;--d1:#e8553d;--d2:#1f8a70;--warn:#b26a00;--warnbg:#fff4df}
+@media(prefers-color-scheme:dark){:root{--bg:#111214;--card:#1c1d20;--fg:#f2f2f4;--mut:#9a9aa1;--line:#2c2d31;--acc:#4da3ff;--d1:#ff7a63;--d2:#3fc59d;--warn:#ffc266;--warnbg:#3a2c12}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 -apple-system,"PingFang SC","Noto Sans CJK SC",system-ui,sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:16px 14px calc(40px + env(safe-area-inset-bottom))}
+header{padding:18px 4px 8px}h1{font-size:24px;margin:0 0 4px}.sub{color:var(--mut);font-size:13px}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:6px;overflow-x:auto;padding:8px 0;background:var(--bg)}
+nav a{flex:none;padding:6px 12px;border-radius:99px;background:var(--card);border:1px solid var(--line);color:var(--fg);text-decoration:none;font-size:13px}
+h2{font-size:18px;margin:26px 4px 10px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin:10px 0}
+a{color:var(--acc)}.mut{color:var(--mut);font-size:13px}
+.now{background:linear-gradient(135deg,#0a7aff,#5b4bff);color:#fff;border:0}.now .mut{color:#dfe6ff}.now h3{margin:4px 0;font-size:19px}
+.cd{font-size:28px;font-weight:700;font-variant-numeric:tabular-nums;margin:6px 0}
+.now a{color:#fff}
+.tag{display:inline-block;font-size:12px;padding:1px 7px;border-radius:6px;background:var(--warnbg);color:var(--warn);margin-right:4px}
+.unc{color:var(--warn);font-weight:600}
+.bk{display:flex;justify-content:space-between;align-items:center;gap:8px}.bk b{font-size:22px}.bk .ar{color:var(--mut)}
+.pill{font-size:12px;padding:2px 8px;border-radius:99px;background:var(--line)}
+.tl{list-style:none;margin:0;padding:0}.tl li{position:relative;padding:0 0 16px 22px;border-left:2px solid var(--c);margin-left:6px}
+.tl li:last-child{border-color:transparent}.tl li:before{content:"";position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--card);border:2px solid var(--c)}
+.tl li.key:before{background:var(--c)}.tl .t{font-weight:600;font-variant-numeric:tabular-nums;font-size:13px;color:var(--c)}
+.tl .p{font-weight:600}.tl .d{font-size:13.5px}.tl .n{font-size:12.5px;color:var(--mut);word-break:break-word}
+.tl li.past{opacity:.5}.tl li.cur .p:after{content:" · 进行中";color:var(--acc);font-size:12px}
+.go{display:inline-block;font-size:12px;padding:2px 8px;border-radius:8px;border:1px solid var(--acc);text-decoration:none;margin:3px 4px 0 0}
+.todo label{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);align-items:flex-start}.todo label:last-child{border:0}
+.todo input{width:20px;height:20px;flex:none;accent-color:var(--acc);margin-top:1px}.todo input:checked+span{text-decoration:line-through;color:var(--mut)}
+svg{width:100%;height:auto;display:block}svg text{font-size:11px;fill:var(--fg)}
+ul.s{padding-left:18px;margin:6px 0}ul.s li{margin:4px 0;word-break:break-word}
+details summary{cursor:pointer;font-weight:600}
+</style></head><body><main>
+<header><h1>釜山两天一夜 · dodo 单人行程</h1>
+<div class="sub">10/24 周六 – 10/25 周日 · 时间一律为韩国时间 KST（UTC+9，比北京时间快 1 小时）· 查询日期 2026-10-22</div>
+<div class="sub">「沿用旧调研」= 信息来自之前的调研文件（10/12–10/20），这次没有重新核实；「估算」= 没有官方数据、按经验估计的时长。</div></header>
+<nav><a href="#now">此刻</a><a href="#map">地图</a><a href="#book">预订</a><a href="#d1">Day 1</a><a href="#d2">Day 2</a><a href="#todo">待办</a><a href="#tips">提示</a><a href="#unc">未确认</a></nav>
+
+<section id="now" class="card now"><div class="mut">此刻关注 · <span id="clock"></span></div><h3 id="nowT">—</h3><div id="nowW" class="mut"></div><div class="cd" id="cd"></div><div id="nowL"></div></section>
+
+<h2 id="map">总览地图 <span class="mut">示意图（非比例）</span></h2>
+<div class="card"><svg viewBox="0 0 340 250" role="img" aria-label="釜山行程示意图">
+<path d="M10 240 C60 200 70 150 120 160 S200 210 240 170 S300 120 335 90" fill="none" stroke="var(--line)" stroke-width="10" stroke-linecap="round"/>
+<text x="260" y="235" fill="var(--mut)" style="fill:var(--mut)">海 · 示意图</text>
+<g fill="none" stroke-width="3" stroke-linecap="round">
+<path d="M40 60 L95 110 L170 90 L190 185 L60 205 L95 110 L170 90 L225 150 L170 90" stroke="var(--d1)"/>
+<path d="M170 90 L290 75 L270 110 L250 125 L170 90 L95 110 L40 60" stroke="var(--d2)" stroke-dasharray="6 4"/></g>
+<g><circle cx="40" cy="60" r="6" fill="#888"/><text x="10" y="45">金海机场 ✈</text>
+<circle cx="95" cy="110" r="5" fill="#888"/><text x="55" y="128">沙上</text>
+<circle cx="170" cy="90" r="7" fill="var(--acc)"/><text x="150" y="76">西面 · 酒店</text>
+<circle cx="60" cy="205" r="5" fill="var(--d1)"/><text x="20" y="196">MoCA 双年展</text>
+<circle cx="190" cy="185" r="5" fill="var(--d1)"/><text x="198" y="196">釜山站 · 鲍鱼粥</text>
+<circle cx="225" cy="150" r="5" fill="var(--d1)"/><text x="150" y="170">广安里 · 民乐</text>
+<circle cx="290" cy="75" r="5" fill="var(--d2)"/><text x="262" y="62">海云台</text>
+<circle cx="270" cy="110" r="5" fill="var(--d2)"/><text x="278" y="114">Centum</text>
+<circle cx="250" cy="125" r="4" fill="var(--d2)"/><text x="196" y="132" style="font-size:10px">电影殿堂·LP</text></g>
+<g><rect x="10" y="222" width="12" height="4" fill="var(--d1)"/><text x="26" y="227">Day 1</text><rect x="70" y="222" width="12" height="4" fill="var(--d2)"/><text x="86" y="227">Day 2</text></g>
+</svg></div>
+
+<h2 id="book">预订</h2>
+<div class="card"><div class="mut">✈ 去程 · 10/24 周六 · 7C9925（票面 H19925）</div>
+<div class="bk"><div><b>04:05</b><div class="mut">北京时间（=05:05 KST）<br>浦东 T2</div></div><div class="ar">→</div><div style="text-align:right"><b>06:36</b><div class="mut">KST<br>金海国际航站</div></div></div>
+<div class="mut" style="margin-top:6px">乘客 ZHENG/BANGFAN</div></div>
+<div class="card"><div class="mut">✈ 回程 · 10/25 周日 · 7C8351</div>
+<div class="bk"><div><b>22:00</b><div class="mut">KST<br>金海国际航站</div></div><div class="ar">→</div><div style="text-align:right"><b>22:22</b><div class="mut">北京时间 浦东 T2<br>（计划 22:55）</div></div></div>
+<div class="mut" style="margin-top:6px">乘客 ZHENG/BANGFAN · 最晚 19:30–20:00 KST 到机场</div></div>
+<div class="card"><div class="mut">🏨 酒店 · 单人间</div><div style="font-size:18px;font-weight:700">Stay Busan-gil（스테이 부산길）</div>
+<div class="d">부산 부산진구 서면문화로53번길 7-3（西面）</div>
+<div style="display:flex;gap:8px;margin:8px 0;flex-wrap:wrap"><span class="pill">入住 10/24 15:00–23:30 KST</span><span class="pill">退房 10/25 10:00–11:00 KST</span></div>
+<div class="mut">西面站 서면（1/2 号线）约 600m，步行约 10 分钟；部岩站 부암（2 号线）约 600m。<b>没有电梯，房间在 4 楼</b>；晚上巷子比较暗，要经过酒吧街。免费 Wi-Fi。有行李寄存室和储物柜，但<span class="unc">入住前和退房后能不能寄存：未确认</span>。</div>
+<a class="go" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Stay%20Busan-gil%207-3%20Seomyeonmunhwa-ro%2053beon-gil%20Busanjin-gu%20Busan">📍 Google Maps</a>
+<a class="go" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Stay%20Busan-gil%207-3%20Seomyeonmunhwa-ro%2053beon-gil%20Busan">🧭 导航</a>
+<a class="go" target="_blank" rel="noopener" href="https://map.naver.com/p/search/스테이%20부산길">Naver</a></div>
+
+<h2 id="d1" style="color:var(--d1)">Day 1 · 10/24 周六 <span class="mut">红眼航班落地，以轻松为主</span></h2><div class="card"><ul class="tl" id="tl1" style="--c:var(--d1)"></ul></div>
+<h2 id="d2" style="color:var(--d2)">Day 2 · 10/25 周日 <span class="mut">Centum City + 海云台，晚上去机场</span></h2><div class="card"><ul class="tl" id="tl2" style="--c:var(--d2)"></ul></div>
+
+<h2>推荐景点及理由</h2><div class="card"><ol class="s">
+<li><b>釜山双年展 MoCA 主展馆（已排）</b>：主展在这里，场地最大，一张票 16,000 韩元。周六上午人相对少，看完能回西面补觉。</li>
+<li><b>广安里无人机表演（已排）</b>：只有周六有，免费；晚饭就在旁边的民乐生鱼片城，吃完走几分钟就到。</li>
+<li><b>釜山电影殿堂 + 电影图书馆听黑胶（已排）</b>：必去。不看电影，逛建筑和大屋顶，再到 4 楼电影图书馆听黑胶放空；离 Centum City 步行约 10 分钟，之后顺 2 号线回西面，再去沙上和机场。</li>
+<li><b>海云台海滩（已排）</b>：就在酱蟹店门口，去 Centum 顺路，不用另外花时间。</li>
+<li><b>影岛（备选）</b>：见下方。</li></ol></div>
+<h2>备选：影岛</h2><div class="card d">影岛双年展两处免费场馆 Space OneZ（봉래나루로 214）+ 原釜山南高中（중리북로 5）+ Momos Coffee 影岛（봉래나루로 160，08:00–18:00）。如果周日不想去 Centum，可以改成上午去影岛（南浦站 6 号出口坐公交）。但这样和 Centum 在城市的两头，一天跑两边会很赶，所以没排进主线。<br>
+<a class="go" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Space%20OneZ%20Yeongdo%20Busan">📍 Space OneZ</a><a class="go" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Momos%20Coffee%20Yeongdo">📍 Momos Coffee 影岛</a></div>
+
+<h2 id="todo">待办清单 <span class="mut">自动保存在本机</span></h2><div class="card todo" id="todoL"></div>
+
+<h2 id="tips">退税与实用提示</h2><div class="card"><ul class="s">
+<li><b>即时退税</b>：单笔 ≥15,000 且 &lt;1,000,000 韩元，整趟累计 ≤5,000,000 韩元。结账时出示<b>护照原件</b>，直接扣掉税额（沿用旧调研）。</li>
+<li><b>机场退税</b>：金海国际线 2F，人工服务 06:30–21:00 KST，自助机 24 小时。要带护照、收据和商品，最好在 20:30 前办完。位置「部分确认」（沿用旧调研）。</li>
+<li>交通：建议全程用 T-money 卡。轻轨票价 1,600 韩元起；地铁票价「未确认」。</li>
+<li>酒店在 4 楼且没有电梯，行李尽量轻。</li>
+<li>双年展门票出馆后不能再入场，馆内洗手间和咖啡最好一次解决。</li>
+<li>上网：酒店有免费 Wi-Fi。手机流量（韩国 eSIM、实体卡或国内运营商漫游）价格和供应商「未确认」。建议出发前买好韩国 eSIM，落地就能用 Naver Map / KakaoMap 导航（Google Maps 在韩国步行导航功能有限，这是一般经验）。</li>
+<li>Naver Map 搜索格式：https://map.naver.com/p/search/店名</li></ul></div>
+
+<h2 id="unc">未确认信息</h2><div class="card"><ul class="s">
+<li>Stay Busan-gil 入住前、退房后能否寄存行李，以及有没有费用</li>
+<li>西面站寄存柜的格数和价格</li>
+<li>双年展开放时间（周二至周日 10:00–18:00、最后入场 17:00）这次没有在官网新版页面上再次看到，沿用 10/12 的新闻稿；三馆之间免费接驳车的时刻表</li>
+<li>釜山电影殿堂整体开放时间、当周展览；电影图书馆移动会员证外国游客能否办理、黑胶座位是否需排队</li>
+<li>新世界 Centum 10/25 是否为休息日</li>
+<li>民乐生鱼片城单人份量和价格、门牌；Haemaki 是否要排队</li>
+<li>各段地铁用时（标「估算」的那些）、地铁票价、入境所需时间</li>
+<li>韩国 eSIM 和漫游方案的价格</li>
+<li>金海机场官方建议的提前到达时间</li>
+<li>Bar Oasis 2026 年营业时间；Blackup Coffee 门牌号</li></ul></div>
+
+<h2>来源</h2><div class="card"><details><summary>展开全部来源链接</summary><ul class="s" id="src"></ul>
+<p class="mut">Booking.com 页面（https://www.booking.com/hotel/kr/seuteibusangil-stay-busan-gil-guesthouse-seomyeon-busan.html）这次抓取被拒（403），没能核对。</p></details></div>
+<p class="mut" style="text-align:center">dodo 的釜山手册 · 所有时间 KST</p>
+</main>
+<script>
+const G=q=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q),N=q=>"https://www.google.com/maps/dir/?api=1&travelmode=transit&destination="+encodeURIComponent(q);
+// [day,start,end,timeLabel,place,addr,query,transport,do,note,key]
+const I=[
+[1,"10-24T06:36","10-24T07:30","06:36–约 07:30","金海机场国际航站","부산 강서구 공항진입로 108 (Gimhae Int'l Airport)","Gimhae International Airport International Terminal","—","入境，在便利店买或充 T-money 卡","出关时间是估算。轻轨周六首班 05:40，不用担心没车（沿用旧调研）",1],
+[1,"10-24T07:40","10-24T08:30","约 07:40–08:30","西面 → 酒店","서면문화로53번길 7-3","Stay Busan-gil 7-3 Seomyeonmunhwa-ro 53beon-gil Busan","金海轻轨到沙上 6–9 分钟 → 2 号线到西面约 14 分钟 → 步行约 10 分钟；票价 1,600 韩元起（沿用旧调研）","寄存行李","提前寄存「未确认」，不行就用西面站寄存柜"],
+[1,"10-24T08:40","10-24T09:00","08:40–09:00","西面 → 釜山站","","Busan Station","1 号线西面 → 釜山站约 15 分钟（估算）","",""],
+[1,"10-24T09:00","10-24T10:15","09:00–10:15","大海鲍鱼粥 釜山站直营店 바다마루전복죽 부산역 직영점","부산 동구 초량동 1198-6（电话 051-442-0397）","바다마루전복죽 부산역 직영점","釜山站下车后步行，用时「未确认」","早餐：鲍鱼粥 13,000 韩元，特大份 18,000 韩元","菜单价格来源：diningcode（2026-10-22 查询）。<span class=unc>釜山站店周六营业时间「未确认」</span>，海云台本店是每天 07:00–20:00、14:30–16:00 午休，建议提前打电话确认",1],
+[1,"10-24T10:20","10-24T11:20","10:20–11:20","釜山站 → 釜山当代美术馆 MoCA Busan","부산 사하구 낙동남로 1191（乙淑岛）","Museum of Contemporary Art Busan","1 号线釜山站 → 下端站约 25 分钟（估算）→ 3 号出口换乘公交 3/55/58/58-1 等，约 10–15 分钟（估算）","",""],
+[1,"10-24T11:20","10-24T14:30","11:20–14:30","釜山双年展 主展馆 MoCA","부산 사하구 낙동남로 1191","Museum of Contemporary Art Busan","—","看 Dissident Chorus。中文讲解时段：MoCA 每天 11/12/14/15/16/17 点（沿用旧调研）","10/24 在展期内：8/29–11/1。成人票 16,000 韩元，到现场 1 楼售票处买，网上预订也要先换纸质票；出馆后不能再入场。开放时间周二至周日 10:00–18:00、最后入场 17:00 来自旧调研，<span class=unc>这次没有在官网新版页面上再次看到时间</span>",1],
+[1,"10-24T14:30","10-24T15:30","14:30–15:30","MoCA → 酒店","","Stay Busan-gil 7-3 Seomyeonmunhwa-ro 53beon-gil Busan","公交 + 1 号线回西面 + 步行，约 60 分钟（估算）","回酒店",""],
+[1,"10-24T15:30","10-24T17:00","15:30–17:00","Stay Busan-gil","서면문화로53번길 7-3","Stay Busan-gil 7-3 Seomyeonmunhwa-ro 53beon-gil Busan","—","办入住，补觉","4 楼，没有电梯",1],
+[1,"10-24T17:00","10-24T17:30","17:00–17:30","酒店 → 金莲山站","","Geumnyeonsan Station Busan","2 号线西面 → 金莲山（约 20 分钟，估算）","",""],
+[1,"10-24T17:30","10-24T18:40","17:30–18:40","民乐生鱼片城 민락회타운（生鱼片）","부산 수영구 민락동（广安里海滩东端，门牌「未确认」）","민락회타운 부산 수영구 민락동","金莲山站或广安站下车后步行约 15 分钟（估算）","晚餐：按公斤称重买生鱼片，可以打包到海边吃，也可以上楼付摆桌费吃（每人约 6,000 韩元）","营业 09:00–02:00（沿用旧调研）。拉客很凶，先定好鱼种和预算；<span class=unc>单人份量和价格「未确认」</span>",1],
+[1,"10-24T18:45","10-24T19:15","18:45–19:15","广安里海滩 无人机表演","广安里海水浴场（수영구）","Gwangalli Beach Busan","步行几分钟","19:00 场，约 12 分钟，免费","每周六 19:00、21:00（10 月至次年 2 月）；恶劣天气会取消（沿用旧调研）",1],
+[1,"10-24T19:15","10-24T20:30","19:15–20:30（可选）","BCBL Coffee Roasters / Bar Oasis","BCBL：广安里海边，金莲山站 5 号出口约 5 分钟；Oasis：광안해변로 237 2층","BCBL Coffee Roasters Gwangalli","步行","看着广安大桥喝咖啡或小酌","BCBL 周六营业到 22:00（沿用旧调研）。Oasis 2026 年的营业时间「未确认」"],
+[1,"10-24T21:00","10-24T21:30","约 21:00","回酒店","","Stay Busan-gil 7-3 Seomyeonmunhwa-ro 53beon-gil Busan","2 号线金莲山 → 西面约 20 分钟 + 步行 10 分钟（估算）","早点睡","夜里巷子暗，尽量走大路"],
+[2,"10-25T09:30","10-25T10:45","09:30–10:45","酒店","同上","Stay Busan-gil 7-3 Seomyeonmunhwa-ro 53beon-gil Busan","—","吃早餐、收拾行李","评论提到有简单早餐，但细节「未确认」"],
+[2,"10-25T10:45","10-25T11:00","10:45","酒店退房","同上","Stay Busan-gil 7-3 Seomyeonmunhwa-ro 53beon-gil Busan","—","寄存行李","退房后能否寄存「未确认」，不行就用西面站寄存柜",1],
+[2,"10-25T11:00","10-25T11:45","11:00–11:45","西面 → 海云台","","Haeundae Station Busan","2 号线西面 → 海云台约 35 分钟（估算）→ 1 号出口步行约 13 分钟","",""],
+[2,"10-25T11:45","10-25T12:45","11:45–12:45","马山蟹章鱼 Haemaki 酱蟹 마산게낙찜 해마끼 간장게장","부산 해운대구 해운대해변로298번길 24 팔레드시즈 2층","마산게낙찜 해마끼 해운대","同上","酱蟹套餐 1 人份 17,000–18,000 韩元","11:00–21:30，午休 15:00–17:00，每周三休息（沿用旧调研）",1],
+[2,"10-25T12:45","10-25T13:15","12:45–13:15","海云台海滩","就在门口","Haeundae Beach","步行","海边散步","公共海滩，免费"],
+[2,"10-25T13:15","10-25T13:35","13:15–13:35","→ Centum City","","Centum City Station Busan","2 号线海云台 → Centum City 约 6 分钟（估算）","",""],
+[2,"10-25T13:35","10-25T15:15","13:35–15:15","新世界百货 Centum City（网球服装）","부산 해운대구 센텀남대로 35","Shinsegae Centum City","Centum City 站 12 号出口，与商场直接相连","Wilson 和 Lacoste Sport 在 3 楼；B1 三进鱼糕可以买点心；办即时退税","周五至周日 10:30–20:30（沿用旧调研）。10/25 是否百货休息日「未确认」",1],
+[2,"10-25T15:15","10-25T15:25","15:15–15:25","→ 釜山电影殿堂","부산 해운대구 수영강변대로 120","Busan Cinema Center","步行约 10 分钟（估算）","",""],
+[2,"10-25T15:30","10-25T17:10","15:30–17:10","釜山电影殿堂 Busan Cinema Center（영화의전당）· 双锥体 4F 电影图书馆","부산 해운대구 수영강변대로 120","Busan Cinema Center","—","先逛建筑和大屋顶；再到双锥体（더블콘）4 楼的电影图书馆，用 LP 音乐资料室听黑胶放空","图书馆周二至周日 10:00–19:00，周一休馆，免费；馆藏电影音乐 LP 478 种，只有 6 个座位，每人每天限听 1 张；进馆要出示移动会员证（모바일회원증），<span class=unc>外国游客能不能办「未确认」</span>（2026-10-22 查询）",1],
+[2,"10-25T17:10","10-25T17:40","17:10–17:40","→ 西面取行李","","Stay Busan-gil 7-3 Seomyeonmunhwa-ro 53beon-gil Busan","2 号线 Centum City → 西面约 25 分钟 + 步行（估算）","取行李",""],
+[2,"10-25T17:45","10-25T18:15","17:45–18:15","西面 → 沙上","","Sasang Station Busan","2 号线西面 → 沙上约 14 分钟（估算）","",""],
+[2,"10-25T18:15","10-25T19:00","18:15–19:00","合川一流猪肉汤饭 합천일류돼지국밥","부산 사상구 광장로 34","합천일류돼지국밥 사상","沙上站步行约 470m","晚餐：猪肉汤饭约 10,000 韩元","24 小时营业（有时会缩短）；周日 18–20 点高峰，可能排 30–45 分钟（沿用旧调研）",1],
+[2,"10-25T19:00","10-25T19:20","19:00–19:20","→ 金海机场","","Gimhae International Airport International Terminal","金海轻轨沙上 → 机场约 10 分钟","",""],
+[2,"10-25T19:30","10-25T22:00","最晚 19:30–20:00 到机场","金海国际航站","","Gimhae International Airport International Terminal","—","值机；21:00 前办完机场退税","提前 2–2.5 小时到是一般建议，没有找到金海机场的官方建议。退税柜台人工服务 06:30–21:00；免税店 21:00–21:30 关门（沿用旧调研）",1],
+[2,"10-25T22:00","10-25T22:30","22:00","7C8351 起飞","","Gimhae International Airport","—","回上海","",1]];
+const T=s=>Date.parse("2026-"+s+":00+09:00");
+I.forEach((r,i)=>{const[d,s,e,tl,p,a,q,tr,dd,n,k]=r;const li=document.createElement("li");li.id="i"+i;if(k)li.className="key";
+li.innerHTML=`<div class=t>${tl} KST</div><div class=p>${p}</div>${a?`<div class=n>📍 ${a}</div>`:""}${tr&&tr!="—"?`<div class=n>🚇 ${tr}</div>`:""}${dd?`<div class=d>${dd}</div>`:""}${n?`<div class=n>${n}</div>`:""}<a class=go target=_blank rel=noopener href="${G(q)}">📍 地图</a><a class=go target=_blank rel=noopener href="${N(q)}">🧭 导航</a>`;
+document.getElementById("tl"+d).appendChild(li)});
+const ev=[[T("10-24T05:05"),T("10-24T06:36"),"✈ 7C9925 浦东 T2 → 金海","10/24 04:05 北京时间（=05:05 KST）起飞，06:36 KST 到达"],...I.map((r,i)=>[T(r[1]),T(r[2]),r[4],r[3]+" KST · "+(r[8]||r[7]),i])];
+const kst=new Intl.DateTimeFormat("zh-CN",{timeZone:"Asia/Seoul",month:"numeric",day:"numeric",weekday:"short",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false});
+function f(ms){ms=Math.max(0,ms);const d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60,s=Math.floor(ms/1e3)%60;return(d?d+"天 ":"")+String(h).padStart(2,"0")+":"+String(m).padStart(2,"0")+":"+String(s).padStart(2,"0")}
+function tick(){const now=Date.now();document.getElementById("clock").textContent="现在 "+kst.format(now)+" KST";
+I.forEach((r,i)=>{const el=document.getElementById("i"+i);el.classList.toggle("past",now>=T(r[2]));el.classList.toggle("cur",now>=T(r[1])&&now<T(r[2]))});
+let cur=ev.find(e=>now>=e[0]&&now<e[1]),nx=ev.find(e=>e[0]>now),E=$=document.getElementById.bind(document);
+if(!cur&&!nx){E("nowT").textContent="旅程结束，欢迎回家 🏠";E("nowW").textContent="";E("cd").textContent="";E("nowL").innerHTML="";return}
+const e=cur&&!nx?cur:(cur&&nx&&nx[0]-now<15*6e4?nx:(cur||nx));const ing=now>=e[0];
+E("nowT").textContent=(ing?"进行中 · ":"下一项 · ")+e[2];E("nowW").textContent=e[3];
+E("cd").textContent=(ing?"剩余 ":"倒计时 ")+f((ing?e[1]:e[0])-now);
+E("nowL").innerHTML=typeof e[4]=="number"?`<a class=go style="border-color:#fff" href="#i${e[4]}">查看时间线</a><a class=go style="border-color:#fff" target=_blank rel=noopener href="${N(I[e[4]][6])}">🧭 导航</a>`:""}
+tick();setInterval(tick,1000);
+const TD=[["earr",'填写韩国 e-Arrival Card（电子入境卡）：<a target=_blank rel=noopener href="https://e-arrivalcard.go.kr/">e-arrivalcard.go.kr</a>'],["bag","确认行李寄存：通过订房平台问 Stay Busan-gil 入住前 / 退房后能否寄存、是否收费（不行就用西面站投币寄存柜，<a target=_blank rel=noopener href=\"https://www.humetro.busan.kr/homepage/english/facilities/list02.do?gubun=4&menu_no=1006010704\">查询</a>）"],["lib","确认电影图书馆进馆需要的移动会员证（모바일회원증）外国游客能不能办（「未确认」）（<a target=_blank rel=noopener href=\"https://www.dureraum.org/bcc/contents/contentsView.do?rbsIdx=341\">电影图书馆页面</a>）"],["bien","确认双年展开放时间（旧调研：周二至周日 10:00–18:00、最后入场 17:00）（<a target=_blank rel=noopener href=\"https://busanbiennale2026.com/en\">官网</a>）"],["esim","出发前买好韩国 eSIM（价格「未确认」）"],["tm","落地后买 / 充 T-money 卡"],["pp","带护照原件（即时退税和机场退税都要用）"],["light","行李尽量轻（4 楼没有电梯）"],["tax","10/25 21:00 KST 前办完机场退税（最好 20:30 前）"]];
+const LS="busan2026-todo",st=JSON.parse(localStorage.getItem(LS)||"{}"),tlEl=document.getElementById("todoL");
+TD.forEach(([k,h])=>{const l=document.createElement("label");l.innerHTML=`<input type=checkbox ${st[k]?"checked":""}><span>${h}</span>`;l.querySelector("input").onchange=e=>{st[k]=e.target.checked;localStorage.setItem(LS,JSON.stringify(st))};tlEl.appendChild(l)});
+const S=["https://www.dorms.com/youth-Hostel/Stay-Busan-gil/BK14971753","https://stay-busan-gil.booked.kr/","https://hotelping.net/hotels/%EC%8A%A4%ED%85%8C%EC%9D%B4%EB%B6%80%EC%82%B0%EA%B8%B8-%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4-%EC%84%9C%EB%A9%B4-%EB%B6%80%EC%82%B0-%EC%8A%A4%ED%85%8C%EC%9D%B4%EB%B6%80%EC%82%B0%EA%B8%B8-stay-busan-gil-guesthouse-seomyeon-busan","https://stay-busan-gil.busanhotelsweb.com/ko/","https://www.humetro.busan.kr/homepage/english/facilities/list02.do?gubun=4&menu_no=1006010704","https://dayonekorea.co.kr/en/guide/gimhae-airport-to-busan-city","https://www.bglrt.com/00216.web","https://www.diningcode.com/profile.php?rid=UxmrmwNbhPvd","https://www.gajagoapp.kr/place/%ED%95%B4%EC%9A%B4%EB%8C%80-%EB%B0%94%EB%8B%A4%EB%A7%88%EB%A3%A8%EC%A0%84%EB%B3%B5%EC%A3%BD-672","https://busanbiennale2026.com/en/directions","https://busanbiennale2026.com/en","https://busanbiennale2026.com/en/ticket","http://www.busanbiennale.org/BBOCen/?idx=12546&mode=view&pCode=news","https://www.diningcode.com/profile.php?rid=Vdzhjj243yq5","https://www.busan.go.kr/eng/bsevents/1713160","https://www.gwangallimdrone.co.kr/en/home","https://www.siksinhot.com/P/257400","https://superchart.com/ko/@harbor-rice-card/haeundae-beach-soy-crab-set-meal/","https://en.shinsegae.cn/store/introduce.do?storeSeq=3","https://www.dureraum.org/bcc/contents/contentsView.do?rbsIdx=341","https://busan.net/event/4126037/","https://www.siksinhot.com/theme/magazine/8352","https://www.busannavi.net/ko/%e9%99%9c%e5%b7%9d%e4%b8%80%e6%b5%81%e3%83%86%e3%82%b8%e3%82%af%e3%83%83%e3%83%91/","https://momos.co.kr/custom/sub/space","https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=929&vcontsId=248765"];
+document.getElementById("src").innerHTML=S.map(u=>`<li><a target=_blank rel=noopener href="${u}">${decodeURI(u).replace(/^https?:\/\//,"").slice(0,70)}</a></li>`).join("");
+</script></body></html>
