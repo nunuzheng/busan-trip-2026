@@ -39,6 +39,7 @@ details summary{cursor:pointer;font-weight:600}
 
 <section id="now" class="card now"><div class="mut">此刻关注 · <span id="clock"></span></div><h3 id="nowT">—</h3><div id="nowW" class="mut"></div><div class="cd" id="cd"></div><div id="nowL"></div></section>
 
+<div id="drone-cancel" class="card" style="border-color:var(--warn);background:var(--warnbg)"><b>今晚动态</b>：广安里无人机秀 10/24 19:00、21:00 因雨天预报取消。民乐晚饭仍可去，之后改咖啡/酒吧或早点回西面。</div>
 <h2 id="map">总览地图 <span class="mut">示意图（非比例）</span></h2>
 <div class="card"><svg viewBox="0 0 340 250" role="img" aria-label="釜山行程示意图">
 <path d="M10 240 C60 200 70 150 120 160 S200 210 240 170 S300 120 335 90" fill="none" stroke="var(--line)" stroke-width="10" stroke-linecap="round"/>
@@ -78,7 +79,7 @@ details summary{cursor:pointer;font-weight:600}
 
 <h2>推荐景点及理由</h2><div class="card"><ol class="s">
 <li><b>釜山双年展 MoCA 主展馆（已排）</b>：主展在这里，场地最大，一张票 16,000 韩元。周六上午人相对少，看完能回西面补觉。</li>
-<li><b>广安里无人机表演（已排）</b>：只有周六有，免费；晚饭就在旁边的民乐生鱼片城，吃完走几分钟就到。</li>
+<li><b>广安里无人机表演（今晚取消）</b>：官方因雨天预报取消 10/24 19:00、21:00 两场（<a target=_blank rel=noopener href="https://www.gwangallimdrone.co.kr/notice-en/notice-of-performance-cancellation---gwangalli-m-drone-light-show-saturday-oct-24">取消公告</a>）。晚饭仍可去民乐生鱼片城，之后改 BCBL / Bar Oasis 或早点回西面。</li>
 <li><b>釜山电影殿堂 + 电影图书馆听黑胶（已排）</b>：必去。不看电影，逛建筑和大屋顶，再到 4 楼电影图书馆听黑胶放空；离 Centum City 步行约 10 分钟，之后顺 2 号线回西面，再去沙上和机场。</li>
 <li><b>海云台海滩（已排）</b>：就在酱蟹店门口，去 Centum 顺路，不用另外花时间。</li>
 <li><b>影岛（备选）</b>：见下方。</li></ol></div>
@@ -125,7 +126,7 @@ const I=[
 [1,"10-24T15:30","10-24T17:00","15:30–17:00","Stay Busan-gil","서면문화로53번길 7-3","Stay Busan-gil 7-3 Seomyeonmunhwa-ro 53beon-gil Busan","—","办入住，补觉","4 楼，没有电梯",1],
 [1,"10-24T17:00","10-24T17:30","17:00–17:30","酒店 → 金莲山站","","Geumnyeonsan Station Busan","2 号线西面 → 金莲山（约 20 分钟，估算）","",""],
 [1,"10-24T17:30","10-24T18:40","17:30–18:40","民乐生鱼片城 민락회타운（生鱼片）","부산 수영구 민락동（广安里海滩东端，门牌「未确认」）","민락회타운 부산 수영구 민락동","金莲山站或广安站下车后步行约 15 分钟（估算）","晚餐：按公斤称重买生鱼片，可以打包到海边吃，也可以上楼付摆桌费吃（每人约 6,000 韩元）","营业 09:00–02:00（沿用旧调研）。拉客很凶，先定好鱼种和预算；<span class=unc>单人份量和价格「未确认」</span>",1],
-[1,"10-24T18:45","10-24T19:15","18:45–19:15","广安里海滩 无人机表演","广安里海水浴场（수영구）","Gwangalli Beach Busan","步行几分钟","19:00 场，约 12 分钟，免费","每周六 19:00、21:00（10 月至次年 2 月）；恶劣天气会取消（沿用旧调研）",1],
+[1,"10-24T18:45","10-24T19:15","18:45–19:15","广安里海滩 无人机表演 · 今晚取消","广安里海水浴场（수영구）","Gwangalli Beach Busan","步行几分钟","原 19:00 场已取消","官方因雨天预报取消 10/24 19:00、21:00（https://www.gwangallimdrone.co.kr/notice-en/notice-of-performance-cancellation---gwangalli-m-drone-light-show-saturday-oct-24）。晚饭后可改 BCBL / Bar Oasis，或早点回酒店",0],
 [1,"10-24T19:15","10-24T20:30","19:15–20:30（可选）","BCBL Coffee Roasters / Bar Oasis","BCBL：广安里海边，金莲山站 5 号出口约 5 分钟；Oasis：광안해변로 237 2층","BCBL Coffee Roasters Gwangalli","步行","看着广安大桥喝咖啡或小酌","BCBL 周六营业到 22:00（沿用旧调研）。Oasis 2026 年的营业时间「未确认」"],
 [1,"10-24T21:00","10-24T21:30","约 21:00","回酒店","","Stay Busan-gil 7-3 Seomyeonmunhwa-ro 53beon-gil Busan","2 号线金莲山 → 西面约 20 分钟 + 步行 10 分钟（估算）","早点睡","夜里巷子暗，尽量走大路"],
 [2,"10-25T09:30","10-25T10:45","09:30–10:45","酒店","同上","Stay Busan-gil 7-3 Seomyeonmunhwa-ro 53beon-gil Busan","—","吃早餐、收拾行李","评论提到有简单早餐，但细节「未确认」"],
